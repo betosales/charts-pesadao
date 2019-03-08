@@ -19,7 +19,10 @@ def index():
     response_object = {
         'status': 'success',
         'message': 'Deu certo, você conseguiu entrar',
-        'charts': [{'id': i, 'url': url_for('chart', id=i)} for i in range(num_charts)],
+        'charts': [{
+            'id': i,
+            'type': charts[i]['chartType'], 
+            'url': url_for('chart', id=i)} for i in range(num_charts)],
         'num_charts': num_charts
     }
     return make_response(jsonify(response_object)), 200
