@@ -19,6 +19,7 @@ def index():
     response_object = {
         'status': 'success',
         'message': 'Deu certo, você conseguiu entrar',
+        'random_chart': url_for('chart'),
         'charts': [{
             'id': i,
             'type': charts[i]['chartType'], 
