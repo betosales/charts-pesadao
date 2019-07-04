@@ -1,5 +1,5 @@
 # charts-pesadao
-API que retorna dados ficticios para criamos gráficos
+API que retorna dados ficticios para criarmos gráficos
 
 URL para teste https://charts-pesadao.herokuapp.com
 
